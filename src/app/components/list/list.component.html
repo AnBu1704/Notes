@@ -1,0 +1,17 @@
+<mat-toolbar class="toolbar">
+    <span>All Notes</span>
+    <span class="spacer"></span>    
+    <button mat-icon-button style="color: white;" (click)="this.addNote()">
+      <mat-icon>add</mat-icon>
+    </button>
+</mat-toolbar>
+<mat-list class="list">    
+  @for (note of this.notes; track note) {
+    <mat-list-item (click)="selectNote(note.id)" class="list-item" [ngStyle]="{'background-color': note.backgroundCol}">
+      <mat-icon matListItemIcon>{{note.icon}}</mat-icon>
+      <div matListItemTitle>{{note.name}}</div>
+      <div matListItemLine>{{note.updated | date}}</div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  }
+</mat-list>

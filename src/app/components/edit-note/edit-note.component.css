@@ -1,0 +1,46 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container {
+    width: 100%;
+}
+
+.icon-button {
+    color: #4C3BCF;
+    background-color: white;
+    margin-left: 20px;
+    height: 2em;
+    width: 2em;
+}
+
+.name-input {
+    min-width: 300px;
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.note-input-container {
+    width: 100%;
+}
+
+.note-input {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.save-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.save-button {
+    color: white;
+    background-color: #4C3BCF;
+    margin-right: 20px;
+}

@@ -1,0 +1,15 @@
+.icon-list {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.select-item {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    margin: 10px;
+}
+
+.select-item:hover {
+    color: black;
+}

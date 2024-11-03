@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.list-container {
+    grid-column: 1;
+    width: 20%;
+    min-width: fit-content;
+}
+
+.show-note-container {
+    border: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: rgba(0, 0, 0, 0.3);
+    width: 80%;
+}

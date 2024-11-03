@@ -1,0 +1,28 @@
+.toolbar {
+    background-color: #4C3BCF;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    height: 7%;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.mat-mdc-list-item-icon {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.list {
+    overflow-y: scroll; 
+    max-height: 91%
+}
+
+.list-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.list-item-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+

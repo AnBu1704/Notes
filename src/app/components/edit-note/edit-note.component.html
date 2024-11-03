@@ -1,0 +1,23 @@
+<form [formGroup]="formGroup" ngSubmit="this.saveNote()" class="container">
+    <div class="icon-button-name-input-container">
+        <button (click)="this.openIconSelectionDialog('0ms', '0ms')" mat-icon-button class="icon-button">
+            <mat-icon>{{this.icon}}</mat-icon>
+        </button>  
+        <mat-form-field class="name-input">
+            <mat-label>Name</mat-label>
+            <input #inputName matInput (input)="this.onNoteChange()" value="{{this.name}}" formControlName="nameFormControl" [(ngModel)]="this.name">
+        </mat-form-field>
+    </div>
+    <div class="note-input-container">
+        <mat-form-field class="note-input">
+            <mat-label>Note</mat-label>
+            <textarea #textareaText matInput (input)="this.onNoteChange()" value="{{this.text}}" formControlName="textFormControl" [(ngModel)]="this.text"></textarea>
+        </mat-form-field>
+    </div>
+    <div class="save-button-container" *ngIf="this.editedNote">
+        <button (click)="this.saveNote()" mat-fab class="save-button">
+            <mat-icon>save</mat-icon>
+        </button>
+    </div>
+</form>
+
